@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, hsl(235, 70%, 60%), hsla(235, 70%, 60%, 0.1));
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    height: 80vh;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    padding: 20px;
+    flex: 1 1 300px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    border-right: 1px solid #ddd;
+   
+}
+.carousel marquee img{
+    width: 50%;
+    height: 70vh;
+    
+}
+
+.right {
+    background-color: aliceblue;
+    overflow-y: auto;
+}
+
+.right p {
+   
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+details {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+summary {
+    padding: 15px;
+    color: black;
+    font-weight: bold;
+    
+}
+
+summary p {
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+details[open] {
+    background-color: darkorange;
+    color: black;
+}
+
+details p {
+    margin-top: 10px;
+    color: white;
+}
+@media screen and (max-width: 480px) {
+   .container .left{
+    display: none;
+   }
+  }
