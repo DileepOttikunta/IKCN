@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+     background: linear-gradient(45deg, hsl(235, 70%, 60%), hsla(235, 70%, 60%, 0.1));
+   
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #22109671;
     display: flex;
     justify-content: center;
     align-items: center;
