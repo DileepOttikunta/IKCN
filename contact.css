@@ -1,8 +1,11 @@
+
+*{
+ background: linear-gradient(45deg, hsl(235, 70%, 60%), hsla(235, 70%, 60%, 0.1));
+}
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-     background: linear-gradient(45deg, hsl(235, 70%, 60%), hsla(235, 70%, 60%, 0.1));
     color: #333;
 }
 
