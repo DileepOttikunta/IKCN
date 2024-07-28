@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Practice Site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            
+            background: linear-gradient(45deg, deeppink, navy);
+        }
+        h3{
+            padding: 10px;
+            color: aliceblue;
+            background: linear-gradient(45deg, navy, navy);
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            background: linear-gradient(45deg, deeppink, navy);
+        }
+        .accordion{
+            margin: 10px;
+            border-radius: 8px;
+            width: 30%;
+            background-color: aliceblue;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .accordion details {
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .accordion summary {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.2em;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .accordion summary:hover {
+            background-color: #e1e1e1;
+        }
+        .accordion summary::-webkit-details-marker {
+            display: none;
+        }
+        .accordion details[open] summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .accordion p {
+            padding: 10px;
+            margin: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .compiler{
+            width: 66%;
+            height: auto;
+        }
+        iframe{
+            margin: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        a{
+           width: 10rem;
+           padding: 10px;
+           height: 10vh;
+           background-color: white;
+           color: blue;
+           text-align: none;
+           position: relative;
+          top: 10%;
+           left: 50%;
+        }
+        a:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h3>After completion of your assignment take a screenshot of code + input + output and click the submit button. You will be redirected to a Google form where you can submit.</h3>
+    </marquee>
+    <div class="container">
+        <div class="accordion">
+            <p>Java Questions </p>
+            <details>
+                <summary>Question 1: Addition Of 2 Numbers</summary>
+                <p><strong>Description:</strong> Take 2 inputs from the user and perform the addition.</p>
+                <p><strong>Input:</strong><br>10<br>20</p>
+                <p><strong>Output:</strong><br>30</p>
+            </details>
+            <details>
+                <summary>Question 2 : Nth number Table Printing </summary>
+                <p><strong>Description:</strong> Take 1 input from the user and perform the Multiplication Table.</p>
+                <p><strong>Input:</strong><br>5</p>
+                <p><strong>Output:</strong><br>5*1=5 <br>5*2=10 <br>..<br>5*10=50</p>
+                </details>
+            <details>
+                <summary>Question 3: sum n numbers </summary>
+                <p><strong>Description:</strong> Take 1 input from the user and perform the Sumation.</p>
+                <p><strong>Input:</strong><br>630230</p>
+                <p><strong>Output:</strong><br>15<br>Explanation : 6+3+0+2+3+0 = 15</p>
+                
+            </details>
+            <p>Python Questions</p>
+           <p>Updates Coming Soon</p>
+        </div>
+        <div class="compiler">
+            <iframe
+                frameBorder="0"
+                height="450px"  
+                src="https://onecompiler.com/embed/" 
+                width="100%"
+            ></iframe>
+        </div>
+    </div>
+    <a href="https://forms.gle/4RLCh29adoh1zRs27">Submit Assignment</a>
+</body>
+</html>
